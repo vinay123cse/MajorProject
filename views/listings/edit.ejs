@@ -29,8 +29,11 @@
                     <div class="mb-3">
                         <label for="description" class="form-label">Description</label>
                         <textarea 
-                        name="listing[description]" 
-                        value="<%=listing.description %>" class="form-control" required></textarea>
+                            name="listing[description]" 
+                            value="<%=listing.description %>" 
+                            class="form-control" 
+                            required
+                        ></textarea>
                         <div class="invalid-feedback">
                             Description should be valid?
                         </div>
@@ -40,16 +43,16 @@
                         <img class="row-5 col-5 " src="<%=originalImageUrl%>"/>
                     </div>
 
-                <div class="mb-3">
+                    <div class="mb-3">
                         <label for="image" class="form-label">Upload New Image</label>
                         <input 
                         name="listing[image]" 
-                        value="<%=listing.image.url%>"
+                       
                         type="file"
                         class="form-control">
                        
                     
-                </div>
+                    </div>
                     
                 <div class="row">
                         <div class="mb-3 col-md-4">

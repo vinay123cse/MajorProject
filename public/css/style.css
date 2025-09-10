@@ -71,8 +71,10 @@ body {
 
  /* cards */
  .listing-card{
-    border: none !important;
-    margin-bottom: 2rem;
+   border: none !important;
+   margin-bottom: 2rem;
+   
+   
  }
 
  .card-img-top{
@@ -82,19 +84,19 @@ body {
  }
 
 .card-body{
-    padding: 0 !important;
+   padding: 0 !important;
 }
 
 .card-text p{
-    font-weight: 400 !important;
+   font-weight: 400 !important;
 }
 
 .listing-link{
-    text-decoration: none;
+   text-decoration: none;
 }
 
 .card-img-overlay{
-    opacity: 0;
+   opacity: 0.5;
 }
 
 .card-img-overlay:hover{
@@ -121,4 +123,9 @@ body {
    padding-left: 0;
    padding-right: 0;
 }
+
+
+
+
+
 

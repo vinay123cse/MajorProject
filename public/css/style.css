@@ -124,6 +124,18 @@ body {
    padding-right: 0;
 }
 
+/* this is for navbar */
+@media(max-width: 700px) {
+   .navbar {
+      height:auto;
+     
+   }
+   .navbar-nav {
+      margin-left: auto;
+      padding: 0 10px 0 10px;
+   }
+}
+
 
 
 

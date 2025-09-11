@@ -1,4 +1,14 @@
 <% layout("layouts/boilerplate") %>
+   <style>
+         @media(max-width: 700px) {
+            .show-card {
+                width: 50%;
+            }
+            .review {
+                width: 90%;
+            }
+        }
+   </style>
     <body>
         <div class="row mt-3">
             <div class="col-8 offset-3">
@@ -81,7 +91,7 @@
                 
                 <div class="row">
                     <% for(review of listing.reviews) {%>
-                        <div class="card col-5 ms-3 mb-3">
+                        <div class="card col-5 ms-3 mb-3 review">
                                 <div class="card-body">
                                     <h5 class="card-title"><%=review.author.username%></h5>
                                     <p class="starability-result card-text" data-rating="<%= review.rating %>"></p>

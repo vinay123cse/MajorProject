@@ -134,6 +134,11 @@ body {
       margin-left: auto;
       padding: 0 10px 0 10px;
    }
+   .listing-card{
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+   }
 }
 
 

@@ -2,8 +2,9 @@
    <style>
          @media(max-width: 576px) {
             .show-card {
-                width: 100%;
-                margin-right: auto;
+                width: 100% !important;
+                margin-right: 0;
+                margin-left: 0;
                 
             }
             .title {
@@ -94,7 +95,7 @@
                 
                 <div class="row">
                     <% for(review of listing.reviews) {%>
-                        <div class="card col-5 ms-3 mb-3 review">
+                        <div class="card ms-3 mb-3 review col-12 col-sm-6 col-md-4 col-lg-3">
                                 <div class="card-body">
                                     <h5 class="card-title"><%=review.author.username%></h5>
                                     <p class="starability-result card-text" data-rating="<%= review.rating %>"></p>

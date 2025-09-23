@@ -21,7 +21,7 @@
             .filter p {
                 font-size: 0.8rem;
             }
-            @media(max-width: 1200px) {
+            @media(min-width: 1200px) {
                 #filters{
                     justify-content: flex-start;
                     overflow-x: auto;
@@ -43,6 +43,17 @@
             }
             .row{
                 margin-right: 5px !important;
+            }
+            @media(max-width: 576px){
+                .listing-card{
+                    width: 100% !important;
+                    height: auto !important;
+                    width: auto !important;
+                }
+                .col{
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
             }
         </style>
         <body>
@@ -122,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 mt-3">
+        <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 mt-3 ">
              <% for(let listing of allListings) {%>
                 <div class="col">
                     <a href="/listings/<%=listing._id%>" class="listing-link">
